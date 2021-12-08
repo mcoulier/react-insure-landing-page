@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export const MainWrapper = styled.div`
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   margin: auto;
   max-width: 1440px;
 `;
