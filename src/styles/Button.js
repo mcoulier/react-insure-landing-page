@@ -6,6 +6,5 @@ export const Button = styled.button`
   border: none;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: ${(props) => props.theme.colors.darkViolet};
   background-color: inherit;
 `;
