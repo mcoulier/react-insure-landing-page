@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const theme = {
   colors: {
@@ -18,9 +18,19 @@ export const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'Karla', sans-serif;
-      //background-color: ${theme.colors.violet};
     }
     h1, h2, h3, h4, h5, h6 {
       font-family: 'DM Serif Display', serif;
     }
+    button {
+      cursor: pointer;
+      font-family: 'Karla', sans-serif;
+    }
   `;
+
+export const MainWrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  max-width: 1440px;
+`;
