@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 100px 140px;
+  padding: 6rem 7.7rem;
 `;
 
 export const HeroTitle = styled.h1`

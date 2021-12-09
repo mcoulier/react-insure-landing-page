@@ -5,7 +5,7 @@ export const theme = {
     violet: "hsl(256, 26%, 20%)",
     blue: "hsl(216, 30%, 68%)",
     darkViolet: "hsl(270, 9%, 17%)",
-    grayViolet: "hsl(273, 4%, 51%)",
+    greyViolet: "hsl(273, 4%, 51%)",
     lightGrey: "hsl(0, 0%, 98%)",
   },
 };

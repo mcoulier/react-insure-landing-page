@@ -6,11 +6,11 @@ export const SectionContainer = styled.div`
   color: ${(props) => props.theme.colors.darkViolet};
   display: flex;
   flex-direction: column;
-  padding: 1px 165px;
+  padding: 0rem 10rem;
   margin-top: 300px;
 `;
 
-export const SectionTitle = styled.h3`
+export const SectionTitle = styled.h2`
   font-size: 70px;
   font-weight: 400;
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../../styles/Button";
 
-export const BannerTitle = styled.h4`
+export const BannerTitle = styled.h3`
   font-size: 54px;
   color: #fafafa;
   font-weight: 400;
@@ -22,7 +22,6 @@ export const BannerContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 200px;
-  padding: 0px 165px;
-  height: 250px;
+  margin: 12rem 10rem;
+  padding: 0rem 4rem;
 `;
