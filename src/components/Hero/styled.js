@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   height: 400px;
   color: #fafafa;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   padding: 100px 140px;
 `;
@@ -19,7 +19,9 @@ export const HeroTitle = styled.h1`
   line-height: 1;
 `;
 
-export const HeroImg = styled.img``;
+export const HeroImg = styled.img`
+  height: clamp(27.9365rem, 45.1vw, 40.625rem);
+`;
 
 export const HeroBtn = styled(Button)`
   border: 2px solid #fafafa;

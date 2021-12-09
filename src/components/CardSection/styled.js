@@ -17,12 +17,12 @@ export const SectionTitle = styled.h3`
 
 export const CardContainer = styled.div`
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
 `;
 
 export const Card = styled.div`
   width: 350px;
+  margin-right: 15px;
 `;
 
 export const CardTitle = styled.h4`
