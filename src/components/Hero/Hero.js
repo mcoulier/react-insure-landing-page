@@ -5,17 +5,17 @@ import {
   HeroImg,
   HeroBtn,
   HeroText,
+  HeroLine,
   HeroWrapper,
   RightPattern,
 } from "./styled";
 import HeroImage from "../images/hero-desktop.jpg";
-import { Line } from "../../styles/Line";
 
 export default function Hero() {
   return (
     <HeroContainer>
       <HeroWrapper>
-        <Line />
+        <HeroLine />
         <HeroTitle>Humanizing your insurance.</HeroTitle>
         <HeroText>
           Get your life insurance coverage easier and faster. We blend our
@@ -24,11 +24,7 @@ export default function Hero() {
         </HeroText>
         <HeroBtn>View Plans</HeroBtn>
       </HeroWrapper>
-      <HeroWrapper>
-        <HeroImg src={HeroImage} />
-      </HeroWrapper>
-      {/*         <RightPattern />
-       */}{" "}
+      <HeroImg src={HeroImage} />
     </HeroContainer>
   );
 }

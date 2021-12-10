@@ -41,8 +41,6 @@ export const FooterLinks = styled.section``;
 export const FooterNav = styled.nav``;
 
 export const Title = styled.p`
-  font-weight: 700;
-  text-transform: uppercase;
   color: ${(props) => props.theme.colors.greyViolet};
 `;
 
@@ -52,4 +50,7 @@ export const FooterListItem = styled(ListItem)`
   display: flex;
   flex-direction: column;
   line-height: 2;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
 `;

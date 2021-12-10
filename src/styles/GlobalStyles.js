@@ -11,13 +11,21 @@ export const theme = {
 };
 
 export const GlobalStyle = createGlobalStyle`
+    * {
+      margin: 0;
+    }
     html {
       box-sizing: border-box;
+      height: 100%;
+      overflow-x: hidden;
     }
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Karla', sans-serif;
+      font-family: 'Karla', sans-serif;  
+
+    }
+    img {
+      display: block;
+      max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
       font-family: 'DM Serif Display', serif;
