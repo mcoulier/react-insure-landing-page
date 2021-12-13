@@ -14,7 +14,7 @@ export const HeroContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding: 6rem 10rem;
-
+  margin-bottom: 14rem;
   @media ${device.mobile} {
     flex-direction: column-reverse;
     text-align: center;
@@ -25,7 +25,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: clamp(2.5rem, 4rem, 5rem);
+  font-size: clamp(4rem, 6vw, 5rem);
   padding: 2.5rem 0rem;
   line-height: 1;
   font-weight: 400;
@@ -49,8 +49,6 @@ export const HeroBtn = styled(Button)`
     color: ${(props) => props.theme.colors.violet};
     background-color: #fafafa;
   }
-  @media ${device.mobile} {
-  }
 `;
 
 export const HeroText = styled.p`
@@ -65,7 +63,7 @@ export const HeroWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     width: auto;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
   }
 `;
 
