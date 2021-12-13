@@ -5,7 +5,7 @@ import { ReactComponent as PatternLeft } from "../images/pattern-intro-left-desk
 import { Line } from "../../styles/Line";
 import { device } from "../../styles/Breakpoints";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
   background-color: ${(props) => props.theme.colors.violet};
   height: 25rem;
   color: #fafafa;
@@ -67,6 +67,7 @@ export const HeroText = styled.p`
 
 export const HeroWrapper = styled.div`
   width: 80%;
+
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;

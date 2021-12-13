@@ -23,13 +23,7 @@ export default function Footer() {
   const links = [
     {
       title: "Our Company",
-      content: [
-        "Our Company",
-        "How We Work",
-        "Why Insure?",
-        "View Plans",
-        "Reviews",
-      ],
+      content: ["How We Work", "Why Insure?", "View Plans", "Reviews"],
     },
     {
       title: "Help Me",

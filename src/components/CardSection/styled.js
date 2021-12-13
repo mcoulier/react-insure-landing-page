@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Line } from "../../styles/Line";
 import { device } from "../../styles/Breakpoints";
 
-export const SectionContainer = styled.div`
+export const SectionContainer = styled.section`
   color: ${(props) => props.theme.colors.darkViolet};
   display: flex;
   flex-direction: column;
