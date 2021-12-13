@@ -14,12 +14,12 @@ import {
 } from "./styled";
 import { ReactComponent as Logo } from "../images/logo.svg";
 import Facebook from "../images/icon-facebook.svg";
-import Instagram from "../images/icon-instagram.svg";
 import Twitter from "../images/icon-twitter.svg";
+import Instagram from "../images/icon-instagram.svg";
 import Pinterest from "../images/icon-pinterest.svg";
 
 export default function Footer() {
-  const icons = [Facebook, Twitter, Instagram, Pinterest];
+  const icons = [Facebook, Twitter, Pinterest, Instagram];
   const links = [
     {
       title: "Our Company",
