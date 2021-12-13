@@ -23,7 +23,13 @@ export default function Footer() {
   const links = [
     {
       title: "Our Company",
-      content: ["How We Work", "Why Insure?", "View Plans", "Reviews"],
+      content: [
+        "Our Company",
+        "How We Work",
+        "Why Insure?",
+        "View Plans",
+        "Reviews",
+      ],
     },
     {
       title: "Help Me",
@@ -54,16 +60,18 @@ export default function Footer() {
         </SocialWrapper>
       </FooterTop>
       <FooterNav>
-        <FooterList>
-          {links.map((link, index) => (
-            <FooterListItem key={index}>
+        {links.map((link, index) => (
+          <FooterList>
+            <FooterListItem>
               <Title>{link.title}</Title>
-              {link.content.map((content) => (
-                <FooterLink>{content}</FooterLink>
-              ))}
             </FooterListItem>
-          ))}
-        </FooterList>
+            {link.content.map((content) => (
+              <FooterListItem key={index}>
+                <FooterLink>{content}</FooterLink>
+              </FooterListItem>
+            ))}
+          </FooterList>
+        ))}
       </FooterNav>
     </FooterContainer>
   );

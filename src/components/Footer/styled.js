@@ -44,19 +44,22 @@ export const Link = styled.a`
 export const FooterList = styled.ul`
   list-style: none;
   padding: 0;
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 80%;
   @media ${device.mobile} {
-    flex-direction: column;
     width: auto;
     text-align: center;
   }
 `;
 
-export const FooterLinks = styled.section``;
-
-export const FooterNav = styled.nav``;
+export const FooterNav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
+`;
 
 export const Title = styled.p`
   color: ${(props) => props.theme.colors.greyViolet};
@@ -65,7 +68,7 @@ export const Title = styled.p`
 
 export const FooterLink = styled(Link)`
   &:hover {
-    border-bottom: 1px solid rgba(50, 50, 50, 0.15);
+    text-decoration: underline;
   }
 `;
 
@@ -75,5 +78,5 @@ export const FooterListItem = styled(ListItem)`
   line-height: 2;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;

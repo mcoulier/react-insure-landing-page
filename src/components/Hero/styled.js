@@ -4,7 +4,6 @@ import { ReactComponent as PatternRight } from "../images/pattern-intro-right-de
 import { ReactComponent as PatternLeft } from "../images/pattern-intro-left-desktop.svg";
 import { Line } from "../../styles/Line";
 import { device } from "../../styles/Breakpoints";
-import HeroMobile from "../images/hero-mobile.jpg";
 
 export const HeroContainer = styled.div`
   background-color: ${(props) => props.theme.colors.violet};
@@ -12,7 +11,7 @@ export const HeroContainer = styled.div`
   color: #fafafa;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 6rem 10rem;
   margin-bottom: 14rem;
   @media ${device.mobile} {
@@ -32,13 +31,23 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroImg = styled.img`
-  height: clamp(28rem, 45vw, 40rem);
+  height: clamp(30rem, 45vw, 40rem);
   padding-left: 1rem;
   @media ${device.mobile} {
+    display: none;
     object-fit: cover;
     padding: 0;
     height: auto;
-    background-image: url(${HeroMobile});
+  }
+`;
+
+export const HeroMobileImg = styled.img`
+  display: none;
+  @media ${device.mobile} {
+    height: clamp(30rem, 50vw, 35rem);
+    display: block;
+    object-fit: cover;
+    padding: 0;
   }
 `;
 
@@ -53,7 +62,7 @@ export const HeroBtn = styled(Button)`
 
 export const HeroText = styled.p`
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 `;
 
 export const HeroWrapper = styled.div`

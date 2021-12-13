@@ -8,8 +8,10 @@ import {
   HeroLine,
   HeroWrapper,
   RightPattern,
+  HeroMobileImg,
 } from "./styled";
 import HeroImage from "../images/hero-desktop.jpg";
+import HeroMobile from "../images/hero-mobile.jpg";
 
 export default function Hero() {
   return (
@@ -25,6 +27,7 @@ export default function Hero() {
         <HeroBtn>View Plans</HeroBtn>
       </HeroWrapper>
       <HeroImg src={HeroImage} />
+      <HeroMobileImg src={HeroMobile}/>
     </HeroContainer>
   );
 }

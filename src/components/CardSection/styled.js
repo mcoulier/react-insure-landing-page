@@ -10,11 +10,12 @@ export const SectionContainer = styled.div`
   @media ${device.mobile} {
     padding: 0rem 2rem;
     align-items: center;
+    text-align: center;
   }
 `;
 
 export const SectionTitle = styled.h2`
-  font-size: clamp(3.5rem, 6vw, 4.5rem);
+  font-size: clamp(3.5rem, 6vw, 4rem);
   font-weight: 400;
 `;
 
@@ -32,7 +33,6 @@ export const Card = styled.div`
   width: 350px;
   margin-right: 1rem;
   @media ${device.mobile} {
-    text-align: center;
     margin: 0;
     padding-bottom: 2rem;
   }
@@ -41,11 +41,11 @@ export const Card = styled.div`
 export const CardTitle = styled.h4`
   font-size: 1.5rem;
   font-weight: 400;
+  padding: 1rem 0rem;
 `;
 
 export const CardBody = styled.p`
   color: ${(props) => props.theme.colors.greyViolet};
-
 `;
 
 export const SectionLine = styled(Line)`

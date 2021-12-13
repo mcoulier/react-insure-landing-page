@@ -5,9 +5,7 @@ import { ReactComponent as Logo } from "../images/logo.svg";
 export default function NavBar() {
   return (
     <Nav>
-      <NavContainer>
-        <Logo />
-      </NavContainer>
+      <Logo />
       <NavContainer>
         <NavLink>How We Work</NavLink>
         <NavLink>Blog</NavLink>
