@@ -2,11 +2,18 @@ import styled from "styled-components";
 import { Line } from "../../styles/Line";
 import { device } from "../../styles/Breakpoints";
 
-export const SectionContainer = styled.section`
+export const SectionWrapper = styled.section`
+  margin-top: 18rem;
+`;
+
+export const SectionContainer = styled.div`
   color: ${(props) => props.theme.colors.darkViolet};
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
   padding: 0rem 10rem;
+
   @media ${device.mobile} {
     padding: 0rem 2rem;
     align-items: center;
@@ -15,7 +22,7 @@ export const SectionContainer = styled.section`
 `;
 
 export const SectionTitle = styled.h2`
-  font-size: clamp(3.5rem, 6vw, 4rem);
+  font-size: clamp(3.3rem, 6vw, 4.5rem);
   font-weight: 400;
 `;
 
@@ -38,8 +45,8 @@ export const Card = styled.div`
   }
 `;
 
-export const CardTitle = styled.h4`
-  font-size: 1.5rem;
+export const CardTitle = styled.h3`
+  font-size: 1.7rem;
   font-weight: 400;
   padding: 1rem 0rem;
 `;

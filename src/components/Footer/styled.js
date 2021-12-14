@@ -1,9 +1,18 @@
 import styled from "styled-components";
 import { device } from "../../styles/Breakpoints";
+import { ReactComponent as PatternMobile } from "../images/pattern-footer-mobile.svg";
+import { ReactComponent as PatternDesktop } from "../images/pattern-footer-desktop.svg";
 
-export const FooterContainer = styled.footer`
+export const FooterWrapper = styled.footer`
   background-color: ${(props) => props.theme.colors.lightGrey};
+  position: relative;
+`;
+
+export const FooterContainer = styled.div`
   padding: 2rem 10rem;
+  max-width: 1440px;
+  margin: auto;
+
   @media ${device.mobile} {
     padding: 2rem 2rem;
   }
@@ -24,6 +33,8 @@ export const SocialWrapper = styled.ul`
   list-style: none;
   display: flex;
   gap: 0 1rem;
+  z-index: 8;
+
   @media ${device.mobile} {
     align-items: center;
     padding: 0;
@@ -79,4 +90,25 @@ export const FooterListItem = styled(ListItem)`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
+`;
+
+export const MobilePattern = styled(PatternMobile)`
+  display: none;
+
+  @media ${device.mobile} {
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+`;
+
+export const DesktopPattern = styled(PatternDesktop)`
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media ${device.mobile} {
+    display: none;
+  }
 `;
