@@ -21,16 +21,16 @@ export default function NavBar() {
       <Nav>
         <Logo />
         <NavContainer>
-          <NavLink>How We Work</NavLink>
-          <NavLink>Blog</NavLink>
-          <NavLink>Account</NavLink>
+          <NavLink href="#">How We Work</NavLink>
+          <NavLink href="#">Blog</NavLink>
+          <NavLink href="#">Account</NavLink>
           <NavBtn>View Plans</NavBtn>
         </NavContainer>
         {!isOpen && (
           <MobileNav>
-            <NavLink>How We Work</NavLink>
-            <NavLink>Blog</NavLink>
-            <NavLink>Account</NavLink>
+            <NavLink href="#">How We Work</NavLink>
+            <NavLink href="#">Blog</NavLink>
+            <NavLink href="#">Account</NavLink>
             <NavBtn>View Plans</NavBtn>
             <MobilePattern />
           </MobileNav>

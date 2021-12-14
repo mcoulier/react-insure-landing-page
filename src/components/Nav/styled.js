@@ -33,6 +33,7 @@ export const NavContainer = styled.nav`
 
 export const NavLink = styled.a`
   margin-right: 1.5rem;
+  text-decoration: none;
   cursor: pointer;
   color: ${(props) => props.theme.colors.greyViolet};
 

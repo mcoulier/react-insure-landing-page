@@ -95,9 +95,8 @@ export const HeroLine = styled(Line)`
 
 export const RightPattern = styled(PatternRight)`
   position: absolute;
-  top: 0;
+  top: -5rem;
   right: 0;
-  z-index: 5;
 
   @media ${device.mobile} {
     display: none;
@@ -107,7 +106,7 @@ export const RightPattern = styled(PatternRight)`
 export const LeftPattern = styled(PatternLeft)`
   position: absolute;
   left: 0;
-  top: 30rem;
+  top: 26.3rem;
 
   @media ${device.mobile} {
     display: none;
@@ -120,7 +119,7 @@ export const RightMobPattern = styled(PatternMobRight)`
   @media ${device.mobile} {
     display: inline;
     position: absolute;
-    top: 48rem;
+    top: 44.5rem;
     right: 0;
   }
 `;

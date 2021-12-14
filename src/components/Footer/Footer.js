@@ -54,8 +54,8 @@ export default function Footer() {
           <SocialWrapper>
             {icons.map((icon, index) => (
               <ListItem key={index}>
-                <Link>
-                  <SocialIcon src={icon} alt="" />
+                <Link href="#">
+                  <SocialIcon src={icon} alt="" width={24} height={24} />
                 </Link>
               </ListItem>
             ))}
@@ -68,8 +68,8 @@ export default function Footer() {
                 <Title>{link.title}</Title>
               </FooterListItem>
               {link.content.map((content) => (
-                <FooterListItem key={content}>
-                  <FooterLink>{content}</FooterLink>
+                <FooterListItem>
+                  <FooterLink href="#">{content}</FooterLink>
                 </FooterListItem>
               ))}
             </FooterList>

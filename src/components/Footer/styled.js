@@ -78,6 +78,9 @@ export const Title = styled.p`
 `;
 
 export const FooterLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
